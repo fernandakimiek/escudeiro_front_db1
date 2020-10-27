@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary-color);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+
+}
+
+header .logo {
+    margin-left: 10px;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #D8BFD8;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color:  var(--secondary-color);
+}
+
+/*conteúdo principal*/
+
+.conteudo-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/friends5.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.conteudo-principal .container {
+    margin-left: 40px;
+}
+.conteudo-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.conteudo-principal .titulo {
+    margin-top: 15%;
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.conteudo-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:  var(--secondary-color);
+    border-radius: 5px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.conteudo-principal .botao:hover{
+    background-color:  var(--secondary-color);
+    color:  var(--primary-color);
+}
+
+.botao i {
+    margin-right: 8px;
+}
