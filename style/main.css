@@ -120,18 +120,27 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .conteudo-principal .descricao {
   margin-bottom: 40px;
   margin-top: 10px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
 }
 
 .conteudo-principal .titulo {
-  margin-top: 15%;
-  font-size: 60px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  object-fit: cover;
+  width: auto;
+  height: 100px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .conteudo-principal .titulo {
+    height: 60px;
+  }
 }
 
 .conteudo-principal .botao {
