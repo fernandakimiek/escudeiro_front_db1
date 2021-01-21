@@ -15,13 +15,15 @@ body {
   color: var(--secondary-color);
 }
 
-header .container {
-  display: flex;
-  padding: 10px;
-  width: auto;
-  align-items: center;
-  justify-content:space-between;
+/* Navbar */
+
+header {
+  width:100%;
+  height:60px;
+  position:fixed;
+  z-index:10;
 }
+
 
 header .logo {
   margin-left: 10px;
@@ -31,11 +33,29 @@ header .logo {
   margin-right: 20px;
 }
 
+header .container {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  transition: 0.5s;
+}
+
 header .container .nav-items {
   display: flex;
   align-items: center;
   justify-content:space-between;
   width: auto;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 
 header .container .nav-items .icon-style{
@@ -44,10 +64,37 @@ header .container .nav-items .icon-style{
   cursor: pointer;
 }
 
+header .container .nav-items .dropdown-avatar {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+header .container .nav-items .dropdown-avatar a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+header .container .nav-items .dropdown-avatar a:hover {
+  background-color: #f1f1f1
+}
+
+header .container .nav-items .dropdown:hover .dropdown-avatar {
+  display: block;
+}
+
 header .container .avatar-img {
   width: 40px;
   object-fit: cover;
   cursor: pointer;
+  margin-right: 40px;
 }
 
 header nav a {
@@ -73,10 +120,9 @@ header nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 20px;
 }
-.conteudo-principal .container {
-  width: 70%;
-}
+
 .conteudo-principal .descricao {
   margin-bottom: 40px;
   margin-top: 10px;
@@ -93,11 +139,9 @@ header nav a:hover {
   border: none;
   color: var(--secondary-color);
   border-radius: 5px;
-
   padding: 15px 30px;
   margin-right: 15px;
   font-size: 16px;
-
   cursor: pointer;
   transition: 0.3s ease all;
 }
@@ -111,9 +155,17 @@ header nav a:hover {
   margin-right: 8px;
 }
 
-.container {
-  margin-left: 20px;
+@media (max-width: 600px) {
+  .conteudo-principal .botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    height: 120px;
+  }
 }
+
+/* Carrossel */
 
 .sub-title {
   font-size: 1.4vw;
@@ -122,16 +174,17 @@ header nav a:hover {
   margin: 10px;
   text-decoration: none;
   display: inline-block;
+  padding-top: 20px
 }
 
-.carrosel-container {
+.carrossel-container {
   display: grid;
   grid-template-columns: repeat(3, 100%);
   overflow: hidden;
   scroll-behavior: smooth;
 }
 
-.carrosel-container section {
+.carrossel-container section {
   width: 100%;
   position: relative;
   display: grid;
@@ -139,25 +192,25 @@ header nav a:hover {
   margin: 20px 0;
 }
 
-.carrosel-container .item {
+.carrossel-container .item {
   padding: 0 2px;
-  width: 250px;
+  width:auto;
   object-fit: cover;
 }
 
-.carrosel-container .item .image {
+.carrossel-container .item .image {
   object-fit: cover;
   width: 350px;
   height: 150px;
 }
 
-.carrosel-container .item:hover {
+.carrossel-container .item:hover {
   margin: 0 50px;
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.carrosel-container a {
+.carrossel-container a {
   position: absolute;
   color: #fff;
   text-decoration: none;
@@ -169,16 +222,32 @@ header nav a:hover {
   z-index: 1;
 }
 
-.carrosel-container a:nth-of-type(1) {
+.carrossel-container a:nth-of-type(1) {
   top: 0;
   bottom: 0;
   left: 0;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.carrosel-container a:nth-of-type(2) {
+.carrossel-container a:nth-of-type(2) {
   top: 0;
   bottom: 0;
   right: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* footer*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  margin-top: 15px;
+  margin-bottom: 20px;  
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }

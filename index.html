@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <title>Netflix</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Kimiflix</title>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header >
+        <div class="container" id="nav">
 
             <div class="nav-items">
-                <h2 class="logo">NETFLIX</h2>
+                <h2 class="logo">KIMIFLIX</h2>
                 <nav class="nav-items">
                     <div>
-                        <a href="#">Início</a>
-                        <a href="#">Séries</a>
-                        <a href="#">Filmes</a>
-                        <a href="#">Documentários</a>
+                        <a href="#inicio">Início</a>
+                        <a href="#section_series">Séries</a>
+                        <a href="#section_filmes">Filmes</a>
+                        <a href="#section_animacoes">Animações</a>
                     </div>
                 </nav>
             </div>
@@ -25,98 +26,267 @@
             <div class="nav-items">
                 <i class="fas fa-search fa-lg icon-style"></i>
                 <i class="fas fa-bell fa-lg icon-style"></i>
-                <img class="avatar-img" src="./img/netflix/avatar_netflix.png" alt="avatar">
-                <i class="fas fa-caret-down fa-lg icon-style"></i>
+              
+        
+                <div class="dropdown">
+                    <img class="avatar-img" src="./img/netflix/avatar_netflix.png" alt="avatar">
+                    <div class="dropdown-avatar">
+                      <a href="#">Perfil</a>
+                      <a href="#">Sair</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="conteudo-principal">
-            <div class="container">
-                <h3 class="titulo">FRIENDS</h3>
+        <div id="inicio" class="conteudo-principal">
+            <h3 class="titulo">FRIENDS</h3>
 
-                <p class="descricao">Seis amigos, três homens e três mulheres, enfrentam a vida e os amores em Nova York e adoram passar o tempo livre na cafeteria Central Perk.</p>
+                <p class="descricao">Seis amigos, três homens e três mulheres, enfrentam a vida e os amores em Nova York e 
+                    adoram passar o tempo livre na cafeteria Central Perk.</p>
                
-                <div class="botoes">
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
+                    <div class="botoes">
+                        <button role="button" class="botao">
+                            <i class="fas fa-play"></i>
+                                ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao">
                         <i class="fas fa-info-circle"></i>
-                       MAIS INFORMAÇÕES
-                    </button>
-                </div>
-            </div>
+                                MAIS INFORMAÇÕES
+                        </button>
+                    </div>
         </div>
     </main>
 
     <p class="sub-title">Minha Lista</p>
 
-    <div class="carrosel-container">
+    <div class="carrossel-container">
 
         <section id="section1">
-            <a href="#section3">‹</a>
             <div class="item">
-                <img class="image" src="./img/netflix/breakingbad.png">
+                <img class="image" src="./img/netflix/series/theoa.jpg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/gameofthrones.jpg">
+                <img class="image" src="./img/netflix/series/sense8.png">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/handmaidtale.jpg">
+                <img class="image" src="./img/netflix/filmes/lucy.jpg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/outlander.jpg">
+                <img class="image" src="./img/netflix/filmes/matrix-22082019085100723.jpeg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/sense8.png">
+                <img class="image" src="./img/netflix/desenhos/chiriho.png">
             </div>
-            <a href="#section2">›</a>
-        </section>
-        <section id="section2">
-            <a href="#section1">‹</a>
-            <div class="item">
-                <img class="image" src="./img/netflix/stranger.png">
-            </div>
-            <div class="item">
-                <img class="image" src="./img/netflix/the100.jpg">
-            </div>
-            <div class="item">
-                <img class="image" src="./img/netflix/twd.png">
-            </div>
-            <div class="item">
-                <img class="image" src="./img/netflix/vikings.jpg">
-            </div>
-            <div class="item">
-                <img class="image" src="./img/netflix/gameofthrones.jpg">
-            </div>
-            <a href="#section3">›</a>
         </section>
 
-        <section id="section3">
-            <a href="#section2">‹</a>
+        
+    </div>
+
+    <p id="section_series" class="sub-title">Séries</p>
+
+    <div class="carrossel-container">
+
+        <section id="section4">
+            <a href="#section6">‹</a>
             <div class="item">
-                <img class="image" src="./img/netflix/vikings.jpg">
+                <img class="image" src="./img/netflix/series/breakingbad.png">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/twd.png">
+                <img class="image" src="./img/netflix/series/gameofthrones.jpg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/the100.jpg">
+                <img class="image" src="./img/netflix/series/handmaidtale.jpg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/handmaidtale.jpg">
+                <img class="image" src="./img/netflix/series/outlander.jpg">
             </div>
             <div class="item">
-                <img class="image" src="./img/netflix/stranger.png">
+                <img class="image" src="./img/netflix/series/sense8.png">
             </div>
-            <a href="#section1">›</a>
+            <a href="#section5">›</a>
+        </section>
+
+        <section id="section5">
+            <a href="#section4">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/dark.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/the100.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/twd.png">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/friends.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/theoa.jpg">
+            </div>
+            <a href="#section6">›</a>
+        </section>
+
+        <section id="section6">
+            <a href="#section5">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/therain.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/blackmirror.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/wandavision.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/lacasadepapel.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/series/stranger.png">
+            </div>
+            <a href="#section4">›</a>
         </section>
         
     </div>
 
+    <p id="section_filmes" class="sub-title">Filmes</p>
+
+    <div class="carrossel-container">
+
+        <section id="section7">
+            <a href="#section9">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/homemaranha.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/jogador.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/jumanji.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/lordrings.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/lucy.jpg">
+            </div>
+            <a href="#section8">›</a>
+        </section>
+
+        <section id="section8">
+            <a href="#section7">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/marvel.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/matrix-22082019085100723.jpeg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/meninasmalvadas.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/strange.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/The-Hunger-Games.jpg">
+            </div>
+            <a href="#section9">›</a>
+        </section>
+
+        <section id="section9">
+            <a href="#section8">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/thor.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/aquamarine.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/avatar.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/Divergente.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/filmes/forrestgump.jpg">
+            </div>
+            <a href="#section7">›</a>
+        </section>
+        
+    </div>
+    
+    <p id="section_animacoes" class="sub-title">Animações</p>
+
+    <div class="carrossel-container">
+
+        <section id="section10">
+            <a href="#section12">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/bighero.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/bolt.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/chiriho.png">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/divertidamente.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/eradogelo.jpg">
+            </div>
+            <a href="#section11">›</a>
+        </section>
+
+        <section id="section11">
+            <a href="#section10">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/frozen2.jpeg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/mulan.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/nemo.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/ratatouille.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/reileao.jpg">
+            </div>
+            <a href="#section12">›</a>
+        </section>
+
+        <section id="section12">
+            <a href="#section11">‹</a>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/soul.png">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/totoro.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/toystory.png">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/valente.jpg">
+            </div>
+            <div class="item">
+                <img class="image" src="./img/netflix/desenhos/walle.jpg">
+            </div>
+            <a href="#section10">›</a>
+        </section>
+        
+    </div>
+
+    <div class="footer">
+        <p>© 2020-2021 Kimiflix, Inc. desenvolvido pela Fernanda Kimie Kishimoto</p>
+      </div>
+
+      <script type="text/javascript" src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/a8bc0c4410.js"></script>
 </body>
 </html>
