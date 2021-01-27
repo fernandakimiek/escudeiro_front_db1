@@ -30,11 +30,11 @@ Não é possivel reatribuir um valor porém é possivel modificar o valor dele s
 
 2 - Assinale a(s) diferença(s) entre Funções normais e Arrow Functions?
 
-    Funções normais não guardam escopo
-[x] Funções normais guardam escopo x
-    Arrow function são mais rápidas
-    Arrow function podem ser instanciadas
-[x] Arrow function não guardam escopo x
+Funções normais não guardam escopo
+[x] Funções normais guardam escopo
+Arrow function são mais rápidas
+Arrow function podem ser instanciadas
+[x] Arrow function não guardam escopo
  
 3 - qual o valor da constante name após a execução da função?
  content = {
@@ -52,10 +52,10 @@ userData = {
 this.name = "Walter"
 const name = userData.getName()
 
-    John
-    Luke
+ John
+ Luke
  [x]James
-    Walter
+ Walter
  
 4 - Qual o retorno da função event.getTitle()
 function Event(name, day) {
@@ -137,9 +137,9 @@ function testeGravidez(resultado = false) {
 			      reject("Teste negativo");;
     });
 
-    e para usar a função chamar passando o resultado:
+e para usar a função chamar passando o resultado:
 
-    testeGravidez(resultado)
+   testeGravidez(resultado)
       .then(sonsole.log)
       .catch(console.error)
 }
@@ -245,10 +245,10 @@ O hoisting é o que acontece quando você tem declarações de variáveis(var) e
 
 20 - Em um ambiente do browser. Qual o valor do this utilizando "use-strict";
 
-    window
-    global
+  window
+  global
  [x]undefined
-    null
+  null
  
  
 21 - Quando eu posso utilizar o "Use-strict" no meu código ?
