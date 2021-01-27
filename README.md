@@ -77,10 +77,10 @@ Event.prototype.getTitle = function() {
 }
 event.getTitle()
 
- 	[x] The event 04/02/2019 will take place on Event Test
-    	    The event undefined will take place on undefined
-    	    Uncaught TypeError
-    	    The event null will take place on null
+ 		[x] The event 04/02/2019 will take place on Event Test
+    	    	The event undefined will take place on undefined
+    	    	Uncaught TypeError
+    	    	The event null will take place on null
  
  
 5 - Quais são as formas de selecionar um elemento na DOM e qual a diferença entre elas?
