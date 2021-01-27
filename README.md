@@ -37,7 +37,7 @@ Não é possivel reatribuir um valor porém é possivel modificar o valor dele s
 	[x] Arrow function não guardam escopo
  
 3 - qual o valor da constante name após a execução da função?
- `content = {
+ content = {
   name: "John",
   getName: function() {
     this.name = "James"
@@ -50,7 +50,7 @@ userData = {
   getName: content.getName
 }
 this.name = "Walter"
-const name = userData.getName()`
+const name = userData.getName()
 
  	   John
  	   Luke
@@ -58,7 +58,7 @@ const name = userData.getName()`
  	   Walter
  
 4 - Qual o retorno da função event.getTitle()
-`function Event(name, day) {
+function Event(name, day) {
   this.date = day
   this.name = name
 
@@ -75,7 +75,7 @@ const event = new Event("04/02/2019", "Event Test")
 Event.prototype.getTitle = function() {
   return `The event ${this.name} will take place on ${this.date} `
 }
-event.getTitle()`
+event.getTitle()
 
  	[x] The event 04/02/2019 will take place on Event Test
     	    The event undefined will take place on undefined
@@ -129,20 +129,20 @@ Para criar uma Promise é só inicializar com 'new Promise' que recebe uma funç
 
 ex: uma função que aguarda se o teste deu positivo ou não;
 
-`function testeGravidez(resultado = false) {
-    return new Promise((resolve, reject) => {
-            if (resultado) {
-              resolve("Parabéns você está grávida!");
-            }
+	function testeGravidez(resultado = false) {
+    		return new Promise((resolve, reject) => {
+            		if (resultado) {
+              		resolve("Parabéns você está grávida!");
+            	}
 			      reject("Teste negativo");;
-    });`
+    		});
 
 e para usar a função chamar passando o resultado:
 
-   `testeGravidez(resultado) {
-      .then(sonsole.log)
-      .catch(console.error)
-  }`
+   		testeGravidez(resultado) {
+      			.then(sonsole.log)
+      			.catch(console.error)
+  		}
 
 12 - Liste 3 formas de iterar um Array em javascript e explique a diferença entre cada um deles?
 
