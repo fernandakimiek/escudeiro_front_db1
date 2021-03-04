@@ -216,6 +216,7 @@ header nav a:hover {
 .carrossel-container .item:hover {
   margin: 0 50px;
   transform: scale(1.2);
+  transition: all 0.3s;
   cursor: pointer;
 }
 
@@ -247,7 +248,7 @@ header nav a:hover {
 
 /* footer*/
 
-.footer {
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +257,7 @@ header nav a:hover {
   margin-bottom: 20px;  
 }
 
-.footer a {
+footer a {
   color: #fff;
   text-decoration: none;
 }
